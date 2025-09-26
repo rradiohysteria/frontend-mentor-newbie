@@ -21,7 +21,7 @@
 body {
     min-height: 100vh;
     line-height: 1;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,7 @@ h2 {
     color: var(--brown-800);
 }
 
-h3 {
+.prep-title {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
@@ -79,11 +79,11 @@ p, li, table {
     font-weight: 700;
 }
 
-#title {
+.title {
     margin-bottom: 2rem;
 }
 
-#prep {
+.prep {
     background-color: var(--rose-50);
     border-radius: 0.75rem;
     padding: 1.5rem;
@@ -93,7 +93,7 @@ p, li, table {
     margin-bottom: 2rem;
 }
 
-#ingredients, #instructions, #nutrition {
+.ingredients, .instructions, .nutrition {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -132,13 +132,13 @@ td {
     padding: 0.75rem;
 }
 
+td:nth-child(1) {
+    padding-left: 2.5rem;
+}
+
 tr:last-child td {
     border: none;
     padding-bottom: 0;
-}
-
-td:nth-child(1) {
-    padding-left: 2.5rem;
 }
 
 @media only screen and (max-width: 600px) {
