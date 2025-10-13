@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --navy-50: #ecf2ff;
+    --navy-200: #cac9ff;
+    --navy-950: #303b59;
+    --blue-50: #f3f4fd;
+    --blue-800: #1125d6;
+    --yellow-50: #fffbf4;
+    --yellow-400: #ffb21e;
+    --red-50: #fff6f6;
+    --red-400: #ff5555;
+    --green-50: #f2fcf9;
+    --green-500: #00bb8f;
+
+    /* Gradient */
+    --gradient-1: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --gradient-2: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+    /* Spacing */
+    --spacing-0: 0;
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-1000: 5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.text-1, .text-2 {
+    line-height: 1;
+    font-weight: 800;
+}
+
+.text-1 {
+    font-size: 4.5rem;
+}
+
+.text-2 {
+    font-size: 3.5rem;
+}
+
+.text-3, .text-4, .text-5-b, .text-6-b {
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.text-5-m, .text-6-m {
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.text-3 {
+    font-size: 2rem;
+}
+
+.text-4 {
+    font-size: 1.5rem;
+}
+
+.text-5-b, .text-5-m {
+    font-size: 1.125rem;
+}
+
+.text-6-b, .text-6-m {
+    font-size: 1rem;
+}
+
+.result {
+    background-image: var(--gradient-1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    text-align: center;
+    align-items: center;
+    padding: 2.8rem 3.375rem;
+}
+
+.res-num {
+    background-image: var(--gradient-2);
+    border-radius: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.res-num p {
+    color: var(--navy-200)
+}
+
+.res-desc {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+}
+
+.res-desc p {
+    color: var(--navy-200);
+}
+
+.summary {
+    color: var(--navy-950);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    padding: var(--spacing-400);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-text {
+    display: flex;
+    gap: var(--spacing-200);
+}
+
+.reaction {
+    color: var(--red-400);
+}
+
+.memory {
+    color: var(--yellow-400);
+}
+
+.verbal {
+    color: var(--green-500);
+}
+
+.visual {
+    color: var(--blue-800);
+}
+
+.total {
+    opacity: 50%;
+}
