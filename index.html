@@ -13,54 +13,58 @@
 <body>
   <main>
     <section class="result">
-      <h1 class="text-5-b">Your Result</h1>
+      <h1 class="title">Your Result</h1>
       <div class="res-num">
-        <h2 class="text-2">76</h2>
-        <p class="text-6-b">of 100</p>
+        <h2 class="res-score">76</h2>
+        <p class="detail">of 100</p>
       </div>
       <div class="res-desc">
-        <h2 class="text-4">Great</h2>
-        <p class="text-6-m">You scored higher than 65% of the people who have taken these tests.</p>
+        <h2 class="res-rating">Great</h2>
+        <p class="text-sm">You scored higher than 65% of the people who have taken these tests.</p>
       </div>
     </section>
 
     <section class="summary">
-      <h1 class="text-5-b">Summary</h1>
+      <h1 class="title">Summary</h1>
 
-      <div class="summary-item">
-        <div class="summary-text">
-          <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
-          <p class="reaction text-6-m">Reaction</p>
+      <div class="stats">
+        <div class="summary-item reaction">
+          <div class="summary-text">
+            <img class="icon" src="./assets/images/icon-reaction.svg" alt="reaction icon">
+            <p class="text-sm">Reaction</p>
+          </div>
+          <p class="detail score">80 <span class="total">/ 100</span></p>
         </div>
-        <p class="text-6-b">80 <span class="total">/ 100</span></p>
-      </div>
-      
-      <div class="summary-item">
-        <div class="summary-text">
-          <img src="./assets/images/icon-memory.svg" alt="memory icon">
-          <p class="memory text-6-m">Memory</p>
+        
+        <div class="summary-item memory">
+          <div class="summary-text">
+            <img src="./assets/images/icon-memory.svg" alt="memory icon">
+            <p class="text-sm">Memory</p>
+          </div>
+          <p class="detail score">92 <span class="total">/ 100</span></p>
         </div>
-        <p class="text-6-b">92 <span class="total">/ 100</span></p>
-      </div>
-      
-      <div class="summary-item">
-        <div class="summary-text">
-          <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
-          <p class="verbal text-6-m">Verbal</p>
+        
+        <div class="summary-item verbal">
+          <div class="summary-text">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
+            <p class="text-sm">Verbal</p>
+          </div>
+          <p class="detail score">61 <span class="total">/ 100</span></p>
         </div>
-        <p class="text-6-b">61 <span class="total">/ 100</span></p>
-      </div>
-      
-      <div class="summary-item">
-        <div class="summary-text">
-          <img src="./assets/images/icon-visual.svg" alt="visual icon">
-          <p class="visual text-6-m">Visual</p>
+        
+        <div class="summary-item visual">
+          <div class="summary-text">
+            <img src="./assets/images/icon-visual.svg" alt="visual icon">
+            <p class="text-sm">Visual</p>
+          </div>
+          <p class="detail score">72 <span class="total">/ 100</span></p>
         </div>
-        <p class="text-6-b">72 <span class="total">/ 100</span></p>
       </div>
 
-      <button>
-        Continue
+      <button class="btn-primary">
+        <a href="#">
+          <p class="btn-text">Continue</p>
+        </a>
       </button>
     </section>
   </main>
