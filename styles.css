@@ -199,8 +199,7 @@ body {
         display: flex;
         background-color: white;
         box-shadow: 0 30px 60px rgb(61, 108, 236, 0.15);
-        border-top-right-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        border-radius: 2rem;
         align-items: center;
         justify-content: center;
     }
