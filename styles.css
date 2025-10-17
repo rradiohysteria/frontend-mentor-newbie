@@ -95,6 +95,7 @@ main {
     background-color: var(--grey-900);
     width: 2.625rem;
     height: 2.625rem;
+    padding: var(--spacing-100) var(--spacing-200);
     color: var(--grey-500);
 }
 
@@ -151,3 +152,54 @@ main {
     display: none;
 }
 
+@media only screen and (min-width: 768px) {
+    main {
+        width: 25.75rem;
+        height: 25.75rem;
+    }
+
+    .container {
+        padding: var(--spacing-400) var(--spacing-300);
+    }
+
+    .img-background {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 24px;
+    }
+
+    .container-text h1 {
+        line-height: 2.25rem;
+        font-size: 1.75rem;
+    }
+
+    .container-text p {
+        line-height: 1.5rem;
+        font-size: 0.938rem;
+    }
+
+    .rating-container {
+        gap: var(--spacing-300);
+    }
+
+    .rating-container button {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    .rating-container button, .btn-submit {
+        border-radius: 26px;
+        font-size: 1rem;
+        line-height: var(--spacing-300);
+        letter-spacing: 0.2px;
+    }
+
+    #thankyou {
+        padding: var(--spacing-500) var(--spacing-400);
+        height: 100%;
+    }
+
+    .center {
+        justify-content: center;
+    }
+}
