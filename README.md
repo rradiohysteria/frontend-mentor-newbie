@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/rradiohysteria/nft-preview-card-component)
+- Live Site URL: [GitHub Pages](https://rradiohysteria.github.io/nft-preview-card-component/)
 
 ## My process
 
@@ -26,6 +26,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

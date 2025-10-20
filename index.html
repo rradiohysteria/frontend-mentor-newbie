@@ -13,7 +13,14 @@
 <body>
   <main>
     <article>
-      <img src="./images/image-equilibrium.jpg" alt="project image" class="card-img">
+      <div class="image-container">
+        <div class="card-img">
+          <img src="./images/image-equilibrium.jpg" alt="project image" >
+        </div>
+        <div class="overlay">
+          <img src="./images/icon-view.svg" alt="view icon" class="card-view">
+        </div>
+      </div>
       <div class="card-text">
         <div class="card-title-desc">
           <h1>Equilibrium #3429</h1>
@@ -30,11 +37,14 @@
           </div>
         </div>
         
-        <br>
+        <hr>
 
         <div class="card-creator">
           <img src="./images/image-avatar.png">
-          <p>Creation of Jules Wyvern</p>
+          <div class="creator-text">
+              <p>Creation of</p>
+              <p class="name">Jules Wyvern</p>
+          </div>
         </div>
       </div>
     </article>
