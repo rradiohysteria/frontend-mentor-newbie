@@ -1,9 +1,144 @@
+@use 'variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@use 'variables';
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin text {
+    font-size: 1rem;
+    line-height: 1.65;
+}
 
 * {
     font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 0px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: url(../images/pattern-background-mobile.svg) no-repeat v.$blue-100;
+    min-height: 100vh;
+    @include flex-center;
+}
+
+main {
+    @include flex-center;
+}
+
+.card {
+    width: 90%;
+    background-color: white;
+    @include flex-column;
+    border-radius: 1.25rem;
+    box-shadow: 0 40px 40px -20px rgb(13, 48, 189, 0.15);
+
+    .card-header img {
+        max-width: 100%;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+
+    .card-content {
+        padding: v.$spacing-300;
+        @include flex-column;
+        gap: v.$spacing-300;
+    }
+}
+
+.card-summary {
+    @include flex-column;
+    gap: v.$spacing-200;
+    text-align: center;
+
+    h1 {
+        color: v.$blue-950;
+        font-weight: 900;
+        font-size: 1.375rem;
+        line-height: 1.35;
+    }
+
+    p {
+        @include text;
+        color: v.$gray-600;
+        font-weight: 500;
+    }
+}
+
+.card-order {
+    @include flex-center;
+    gap: 2.375rem;
+    padding: v.$spacing-200;
+    background-color: v.$blue-50;
+    border-radius: 11px;
+
+    .order-left {
+        @include flex-center;
+        gap: v.$spacing-200;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        h2 {
+            color: v.$blue-950;
+            @include text;
+            font-weight: 900;
+        }
+
+        p {
+            @include text;
+            color: v.$gray-600;
+            font-weight: 500;
+        }
+    }
+
+    .order-right {
+        a {
+            text-decoration: none;
+            color: v.$blue-700;
+            @include text;
+            font-weight: 700;
+        }
+    }
+}
+
+.card-button {
+    @include flex-column;
+    gap: v.$spacing-300;
+}
+
+.btn-primary {
+    border: none;
+    background-color: v.$blue-700;
+    height: 3.125rem;
+    border-radius: 11px;
+    box-shadow: 0 20px 20px rgb(56, 42, 225, 0.19);
+    @include text;
+    font-weight: 900;
+    color: white
+}
+
+.btn-secondary {
+    border: none;
+    background-color: transparent;
+    color: v.$gray-600;
+    @include text;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(../images/pattern-background-desktop.svg) no-repeat v.$blue-100;
+    }
 }
