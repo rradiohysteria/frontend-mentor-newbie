@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1rem;
+    line-height: 2;
+    height: 100%;
+    background-color: #1f004b;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #54efea;
+}
+
+li {
+    color: #ec00f0;
+}
+
+.item {
+    position: relative;
+    display: block;
+    color: #51ccdc;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: rgb(236, 0, 240, 0.4);
+}
