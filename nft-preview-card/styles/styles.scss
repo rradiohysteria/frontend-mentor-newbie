@@ -1,0 +1,163 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+}
+
+@mixin text-1 {
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: $spacing-0;
+    font-size: 1.375rem;
+}
+
+@mixin text-2 {
+    font-weight: 300;
+    line-height: 1.45;
+    letter-spacing: $spacing-0;
+    font-size: 1.125rem;
+}
+
+@mixin text-3 {
+    line-height: 1.25;
+    font-size: $spacing-200;
+}
+
+body {
+    @include flex-row;
+    background-color: $blue-950;
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    @include flex-column;
+    width: 21.875rem;
+    background-color: $blue-900;
+    padding: $spacing-300;
+    gap: $spacing-300;
+    border-radius: $spacing-200;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    width: 18.875rem;
+    height: 18.875rem;
+
+    div {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .card-img img {
+        border-radius: $spacing-100;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.overlay {
+    border-radius: $spacing-100;
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    
+    &:hover {
+        background-color: rgb(0, 255, 248, 0.5);
+        opacity: 100;
+    }
+}
+
+.card-text {
+    @include flex-column;
+    gap: $spacing-200;
+
+    .card-title-desc {
+        @include flex-column;
+        gap: $spacing-200;
+
+        & h1 {
+            color: white;
+            @include text-1;
+        }
+
+        & p {
+            color: $blue-500;
+            @include text-2;
+        }
+    }
+    
+    .card-info {
+        @include flex-row;
+        justify-content: space-between;
+
+        .card-price, .card-time {
+            @include flex-row;
+            align-items: center;
+            gap: $spacing-100;
+        }
+
+        .card-price {
+            color: $cyan-400;
+            @include text-3;
+            font-weight: 600;
+        }
+
+        .card-time {
+            color: $blue-500;
+            @include text-3;
+            font-weight: 400;
+
+            & img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    hr {
+        height: 1px;
+        border: 1px solid $blue-800;
+    }
+
+    .card-creator {
+        @include flex-row;
+        gap: $spacing-200;
+        img {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+
+        .creator-text {
+            @include flex-row;
+            gap: $spacing-100;
+            align-items: center;
+            @include text-3;
+            font-weight: 400;
+            color: $blue-500;
+
+            .name {
+                color: white;
+            }
+        }
+    }
+}
