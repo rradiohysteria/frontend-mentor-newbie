@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+  <main>
+    <section class="result">
+      <h1 class="title">Your Result</h1>
+      <div class="res-num">
+        <h2 class="res-score">76</h2>
+        <p class="detail">of 100</p>
+      </div>
+      <div class="res-desc">
+        <h2 class="res-rating">Great</h2>
+        <p class="text-sm">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h1 class="title">Summary</h1>
+
+      <div class="stats">
+        <div class="summary-item reaction">
+          <div class="summary-text">
+            <img class="icon" src="./assets/images/icon-reaction.svg" alt="reaction icon">
+            <p class="text-sm">Reaction</p>
+          </div>
+          <p class="detail score">80 <span class="total">/ 100</span></p>
+        </div>
+        
+        <div class="summary-item memory">
+          <div class="summary-text">
+            <img src="./assets/images/icon-memory.svg" alt="memory icon">
+            <p class="text-sm">Memory</p>
+          </div>
+          <p class="detail score">92 <span class="total">/ 100</span></p>
+        </div>
+        
+        <div class="summary-item verbal">
+          <div class="summary-text">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
+            <p class="text-sm">Verbal</p>
+          </div>
+          <p class="detail score">61 <span class="total">/ 100</span></p>
+        </div>
+        
+        <div class="summary-item visual">
+          <div class="summary-text">
+            <img src="./assets/images/icon-visual.svg" alt="visual icon">
+            <p class="text-sm">Visual</p>
+          </div>
+          <p class="detail score">72 <span class="total">/ 100</span></p>
+        </div>
+      </div>
+
+      <button class="btn-primary">
+        <a href="#">
+          <p class="btn-text">Continue</p>
+        </a>
+      </button>
+    </section>
+  </main>
+</body>
+</html>
