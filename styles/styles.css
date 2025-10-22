@@ -53,11 +53,21 @@ main {
   font-size: 1.375rem;
   line-height: 1.35;
 }
+@media screen and (min-width: 768px) {
+  .card-summary h1 {
+    font-size: 1.75rem;
+  }
+}
 .card-summary p {
-  font-size: 1rem;
+  font-size: 0.938rem;
   line-height: 1.65;
   color: #717fa6;
   font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .card-summary p {
+    font-size: 1rem;
+  }
 }
 
 .card-order {
@@ -81,22 +91,40 @@ main {
 }
 .card-order .order-left h2 {
   color: #1f2e55;
-  font-size: 1rem;
+  font-size: 0.938rem;
   line-height: 1.65;
   font-weight: 900;
 }
+@media screen and (min-width: 768px) {
+  .card-order .order-left h2 {
+    font-size: 1rem;
+  }
+}
 .card-order .order-left p {
-  font-size: 1rem;
+  font-size: 0.938rem;
   line-height: 1.65;
   color: #717fa6;
   font-weight: 500;
 }
+@media screen and (min-width: 768px) {
+  .card-order .order-left p {
+    font-size: 1rem;
+  }
+}
 .card-order .order-right a {
   text-decoration: none;
   color: #382ae1;
-  font-size: 1rem;
+  font-size: 0.938rem;
   line-height: 1.65;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .card-order .order-right a {
+    font-size: 1rem;
+  }
+}
+.card-order .order-right a:hover {
+  color: #766cf1;
 }
 
 .card-button {
@@ -111,23 +139,48 @@ main {
   height: 3.125rem;
   border-radius: 11px;
   box-shadow: 0 20px 20px rgba(56, 42, 225, 0.19);
-  font-size: 1rem;
+  font-size: 0.938rem;
   line-height: 1.65;
   font-weight: 900;
   color: white;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    font-size: 1rem;
+  }
+}
+.btn-primary:hover {
+  background-color: #766cf1;
 }
 
 .btn-secondary {
   border: none;
   background-color: transparent;
   color: #717fa6;
-  font-size: 1rem;
+  font-size: 0.938rem;
   line-height: 1.65;
   font-weight: 900;
 }
+@media screen and (min-width: 768px) {
+  .btn-secondary {
+    font-size: 1rem;
+  }
+}
+.btn-secondary:hover {
+  color: #1f2e55;
+}
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     background: url(../images/pattern-background-desktop.svg) no-repeat #e0e8ff;
+  }
+  .card {
+    width: 55%;
+  }
+  .card .card-content {
+    padding: 3rem;
+  }
+  .card-order {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=styles.css.map */
