@@ -3,3 +3,4 @@ This is a repo of all solutions for the Newbie level challenges of Frontend Ment
 
 ## Solutions included:
 * Social Links Profile
+* Blog Preview Card
