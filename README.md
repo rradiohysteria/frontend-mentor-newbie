@@ -7,3 +7,4 @@ This is a repo of all solutions for the Newbie level challenges of Frontend Ment
 * QR code component
 * NFT preview card
 * Results summary component
+* Product preview card
