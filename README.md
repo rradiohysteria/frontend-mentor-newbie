@@ -9,3 +9,4 @@ This is a repo of all solutions for the Newbie level challenges of Frontend Ment
 * Results summary component
 * Product preview card
 * Recipe page
+* FAQ accordion
