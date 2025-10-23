@@ -19,6 +19,22 @@ body {
     text-transform: uppercase;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    width: 55%;
+    text-align: center;
+    color: #ab17e6;
+    text-shadow:
+        0 0 10px #9201cb,
+        0 0 15px #9201cb;
+}
+
 a {
     text-decoration: none;
     color: #54efea;
