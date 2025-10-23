@@ -8,3 +8,4 @@ This is a repo of all solutions for the Newbie level challenges of Frontend Ment
 * NFT preview card
 * Results summary component
 * Product preview card
+* Recipe page
