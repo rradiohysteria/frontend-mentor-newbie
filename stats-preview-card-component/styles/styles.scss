@@ -1,0 +1,168 @@
+@use 'variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin text-bg {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.25;
+
+    @media screen and (min-width: v.$breakpoint-tablet) {
+        font-size: 2.25rem;
+    }
+}
+
+@mixin text-sm {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.938;
+    line-height: 1.65;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+
+body {
+    background-color: v.$navy-950;
+    color: white;
+    min-height: 100vh;
+    @include flex-center;
+}
+
+main {
+    @include flex-center;
+}
+
+.card {
+    width: 90%;
+    @include flex-column;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    min-height: 15rem;
+    background: url(../images/image-header-mobile.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: v.$spacing-100 v.$spacing-100 0 0;
+
+    &::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background-color: v.$purple-500;
+        mix-blend-mode: multiply;
+    }
+
+    @media screen and (min-width: v.$breakpoint-laptop) {
+        min-width: 35.25rem;
+        border-radius: 0 v.$spacing-100 v.$spacing-100 0;
+    }
+}
+
+.card-content {
+    background-color: v.$blue-950;
+    padding: v.$spacing-300 v.$spacing-400;
+    @include flex-column;
+    gap: v.$spacing-500;
+    border-radius: 0 0 v.$spacing-100 v.$spacing-100;
+}
+
+.card-desc {
+    @include flex-column;
+    gap: v.$spacing-100;
+    text-align: center;
+    
+    h1 {
+        @include text-bg;
+    }
+
+    span {
+        color: v.$purple-500;
+    }
+
+    p {
+        opacity: 0.75;
+        @include text-sm;
+    }
+}
+
+.card-stats {
+    @include flex-column;
+    gap: v.$spacing-400;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 2;
+        letter-spacing: 0.063rem;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-tablet) {
+    .card {
+        width: 70%;
+    }
+
+    .card-img img {
+        min-height: 27.625rem;
+    }
+
+    .card-content {
+        padding: v.$spacing-800 v.$spacing-1000;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card-desc, .card-stats {
+        text-align: start;
+    }
+
+    .card-stats {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: v.$breakpoint-laptop) {
+    .card {
+        flex-direction: row-reverse;
+        width: 80%;
+    }
+
+    .card-img img {
+        min-width: 35.25rem;
+        border-radius: 0 v.$spacing-100 v.$spacing-100 0;
+    }
+
+    .card-content {
+        border-radius: v.$spacing-100 0 0 v.$spacing-100;
+    }
+}

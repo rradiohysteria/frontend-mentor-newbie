@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+
+body {
+  background-color: #0a0c1c;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  min-height: 15rem;
+  background: url(../images/image-header-mobile.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card-img::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: #ab5cdb;
+  mix-blend-mode: multiply;
+}
+@media screen and (min-width: 64rem) {
+  .card-img {
+    min-width: 35.25rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.card-content {
+  background-color: #1b1937;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.card-desc h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.25;
+}
+@media screen and (min-width: 48rem) {
+  .card-desc h1 {
+    font-size: 2.25rem;
+  }
+}
+.card-desc span {
+  color: #ab5cdb;
+}
+.card-desc p {
+  opacity: 0.75;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.938;
+  line-height: 1.65;
+}
+
+.card-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.card-stats h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.card-stats p {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 2;
+  letter-spacing: 0.063rem;
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 48rem) {
+  .card {
+    width: 70%;
+  }
+  .card-img img {
+    min-height: 27.625rem;
+  }
+  .card-content {
+    padding: 4rem 5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .card-desc, .card-stats {
+    text-align: start;
+  }
+  .card-stats {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 64rem) {
+  .card {
+    flex-direction: row-reverse;
+    width: 80%;
+  }
+  .card-img img {
+    min-width: 35.25rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .card-content {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

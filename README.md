@@ -8,6 +8,7 @@ This is a repo of all solutions for the Newbie level challenges of Frontend Ment
 4. NFT preview card
 5. Results summary component
 6. Product preview card
-7. Recipe page
-8. FAQ accordion
-9. Interactive rating component
+7. Stats preview card component
+8. Recipe page
+9. FAQ accordion
+10. Interactive rating component
